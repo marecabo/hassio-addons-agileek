@@ -1,5 +1,8 @@
 # Changelog
 
+## Unreleased
+- Update signal-cli to 0.14.8 and libsignal-client to 0.102.1. Fixes receiving: since a Signal server change on 2026-06-10, signal-cli 0.14.4.1 drops every incoming sealed-sender message with `NullPointerException: getServerGuid(...) must not be null` (AsamK/signal-cli#2059), so the addon could send but not receive.
+
 ## 13.2.0
 - Update signal-cli to 0.14.4.1
 
